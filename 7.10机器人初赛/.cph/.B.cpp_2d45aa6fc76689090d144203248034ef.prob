@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\7.10机器人初赛\\B.cpp","tests":[{"id":1658576060436,"input":"4\n3 4 0 0\n0 0 4 3\n2 1 0 0\n2 0 0 1\n4 2 4 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\7.10机器人初赛\\B.cpp","group":"local","local":true}

@@ -1,0 +1,88 @@
+#include<bits/stdc++.h>
+using namespace std;
+const int N=1<<6+1;
+int rs[10];
+struct node{
+	//MT 工兵 指挥
+	int MT,gb,zh;
+}ts[10];
+vector<int> resa1[N],resa2[N],resa3[N],resa4[N];
+vector<int> resb1[N],resb2[N],resb3[N],resb4[N],w[N];
+
+int mm1,mm2,mm3,mm4;
+char f[10][10];
+int main(){
+	for(int i=1;i<=6;i++)
+		cin>>rs[i];
+	for(int i=1;i<=6;i++){
+		for(int j=1;j<=3;j++){
+			char c;
+			cin>>c;
+			if(c=='1'){
+				if(j==1){
+					ts[i].MT=1;
+				}else if(j==2){
+					ts[i].gb=1;
+				}else{
+					ts[i].zh=1;
+				}
+			}
+		}
+	}
+	for(int i=1;i<(1<<6);i++){
+		vector<int> a,b;
+		for(int j=0;j<6;j++){
+			if(i&(1<<j)){
+				a.push_back(j+1);
+			}else b.push_back(j+1);
+		}
+		int sumMT1=0,sumMT2=0;
+		int sumzh1=0,sumzh2=0;
+		int sumgb1=0,sumgb2=0;
+		for(auto x:a){
+			sumMT1+=ts[x].MT;
+			sumzh1+=ts[x].zh;
+			sumgb1+=ts[x].gb;
+		}
+		for(auto x:b){
+			sumMT2+=ts[x].MT;
+			sumzh2+=ts[x].zh;
+			sumgb2+=ts[x].gb;
+		}
+		if(!sumMT1||!sumMT2) continue;
+		resa1[mm1]=a;
+		resb1[mm1++]=b;
+		if(sumzh1&&sumzh2){
+			if(sumgb1&&sumgb2){
+				resa2[mm2]=a;
+				resb2[mm2++]=b;
+			}else{
+				resa3[mm3]=a;
+				resb3[mm3++]=b;
+			}
+		}else{
+			resa4[mm4]=a;
+			resb4[mm4++]=b;
+		}
+	}
+	// if(mm1==1){
+	// 	for(auto x:resa1[0])
+	// 		cout<<x<<" ";
+	// 	cout<<endl;
+	// 	for(auto x:resb2[0])
+	// 		cout<<x<<' ';
+	// }else if(mm2==1){
+	// 	for(auto x:resa2[0])
+	// 		cout<<x<<" ";
+	// 	cout<<endl;
+	// 	for(auto x:resb2[0])
+	// 		cout<<x<<' ';
+	// }else if(mm3==1){
+	// 	for(auto x:resa3[0])
+	// 		cout<<x<<" ";
+	// 	cout<<endl;
+	// 	for(auto x:resb3[0])
+	// 		cout<<x<<' ';
+	// }else 
+	cout<<"GG";
+}

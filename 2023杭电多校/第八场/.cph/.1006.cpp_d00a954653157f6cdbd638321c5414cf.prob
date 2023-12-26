@@ -1,0 +1,1 @@
+{"name":"Local: 1006","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023杭电多校\\第八场\\1006.cpp","tests":[{"id":1691648814744,"input":"3\nabab ab\nabababab\nab a\naaabbaabaa\naba ab\nababaabbabaab","output":"6\n5\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023杭电多校\\第八场\\1006.cpp","group":"local","local":true}

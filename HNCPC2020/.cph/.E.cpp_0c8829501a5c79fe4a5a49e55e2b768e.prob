@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\2020HNCPC\\E.cpp","tests":[{"id":1680676475885,"input":"5 1\n1 5 8\n3 6 2\n7 8 4\n8 9 0\n10 10 1","output":"10"},{"id":1680677012276,"input":"2 2\n3 5 8\n1 2 4","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\2020HNCPC\\E.cpp","group":"local","local":true}

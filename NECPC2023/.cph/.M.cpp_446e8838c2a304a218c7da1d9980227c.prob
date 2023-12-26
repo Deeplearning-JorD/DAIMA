@@ -1,0 +1,1 @@
+{"name":"Local: M","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023NECPC\\M.cpp","tests":[{"id":1684477578945,"input":"3\n3\n4\n5","output":"2\n4\n5"},{"id":1684478259616,"input":"2\n26\n27","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023NECPC\\M.cpp","group":"local","local":true}

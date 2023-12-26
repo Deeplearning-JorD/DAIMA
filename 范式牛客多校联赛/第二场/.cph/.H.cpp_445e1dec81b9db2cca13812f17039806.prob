@@ -1,0 +1,1 @@
+{"name":"Local: H","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第二场\\H.cpp","tests":[{"id":1690562137408,"input":"10 3\nBAABABABBA\n1 8 0001\n3 5 110\n6 10 0101010101","output":"0011\n111\n0101010110"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第二场\\H.cpp","group":"local","local":true}

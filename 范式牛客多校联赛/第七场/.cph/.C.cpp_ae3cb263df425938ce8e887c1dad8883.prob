@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第七场\\C.cpp","tests":[{"id":1691382400438,"input":"3\n3 3\n1 2\n5 1\n1 2 1 2\n2 1\n0","output":"8 9 11\n-1\n0 0"},{"id":1691383659901,"input":"10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第七场\\C.cpp","group":"local","local":true}

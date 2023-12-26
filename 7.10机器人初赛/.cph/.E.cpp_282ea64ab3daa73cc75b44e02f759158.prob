@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\7.10机器人初赛\\E.cpp","tests":[{"id":1658566260585,"input":"5\n121\n1\n12\n00\n101","output":"00101112112"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\7.10机器人初赛\\E.cpp","group":"local","local":true}

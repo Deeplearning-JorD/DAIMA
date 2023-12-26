@@ -1,0 +1,1 @@
+{"name":"Local: 1002","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023杭电多校\\第一场\\1002.cpp","tests":[{"id":1689653603136,"input":"2\n7\n13 20 1 20 6 9 8\n1 2\n1 3\n2 4\n2 5\n3 6\n5 7\n4\n1 17 13 4\n1 2\n1 3\n3 4","output":"27\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023杭电多校\\第一场\\1002.cpp","group":"local","local":true}

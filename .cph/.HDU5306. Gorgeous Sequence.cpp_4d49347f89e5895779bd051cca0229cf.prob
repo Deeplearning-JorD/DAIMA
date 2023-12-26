@@ -1,0 +1,1 @@
+{"name":"Local: HDU5306","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\HDU5306. Gorgeous Sequence.cpp","tests":[{"id":1684325358240,"input":"1\n5 5\n1 2 3 4 5\n1 1 5\n2 1 5\n0 3 5 3\n1 1 5\n2 1 5","output":"5\n15\n3\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\HDU5306. Gorgeous Sequence.cpp","group":"local","local":true}

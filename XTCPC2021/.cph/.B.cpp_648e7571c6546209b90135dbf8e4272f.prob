@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\XTCPC2021\\B.cpp","tests":[{"id":1681303895766,"input":"10100 1000\n1000001 11111\n10010 0\n11111 101\n101001 10010","output":"4\n3\n7\n11\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\XTCPC2021\\B.cpp","group":"local","local":true}

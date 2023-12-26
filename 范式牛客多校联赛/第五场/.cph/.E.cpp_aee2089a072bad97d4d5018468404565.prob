@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第五场\\E.cpp","tests":[{"id":1690975050096,"input":"4 2\n1 3 1\n1 2 0","output":"1 3 2 4"},{"id":1690975056951,"input":"4 1\n1 1 1","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\范式牛客多校联赛\\第五场\\E.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\B.cpp","tests":[{"id":1653714970493,"input":"5\n1 2 3 4 5\n","output":"0\n"},{"id":1659630030748,"input":"3\n8 12 7\n","output":"3\n"},{"id":1659854827681,"input":"3\n3 2 1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\B.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: H","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\HZCU\\H.cpp","tests":[{"id":1682672386643,"input":"2 3 114514 1919810\n100\n011\n","output":"2034324\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\HZCU\\H.cpp","group":"local","local":true}

@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+using db = double;
+#define endl '\n'
+#define PII pair<ll, ll>
+#define siz(s) (ll)(s.size())
+#define all(a) a.begin(), a.end()
+#define all1(a) a.begin() + 1, a.end()
+#define priq priority_queue
+#define SPO(n) fixed << setprecision(n)
+#define rep(i, l, r) for (ll(i) = (l); (i) <= (r); ++(i))
+#define per(i, r, l) for (ll(i) = (r); (i) >= (l); --(i))
+#define DBG(n) cout<<"!!! "<<#n<<": "<<n<<'\n'
+void Solve(){
+    int n;
+    cin >> n;
+    vector<int> a(n + 1);
+    map<int,int> q;
+    int up = 0;
+    rep(i, 1, n){
+        cin >> a[i];
+        q[a[i]] ++;
+        up += a[i] > 0;
+    }
+    int idx = 0;
+    for(int i = 1;i <= n;i ++){
+        if(i <= up){
+            idx ++;
+        }else idx --;
+        cout << idx << ' ';
+    }
+    cout << endl;
+    idx = 0;
+    rep(i, 1, n){
+        idx += min(q[i], q[-i]);
+    }
+    rep(i, 1, idx) cout << "1 0 ";
+    n -= idx * 2;
+    for(int i = 1;i <= n;i ++) cout << i << " ";
+    cout << endl;
+    return;
+}
+int main(){
+    std::ios::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(nullptr);
+    int t; cin>>t; while(t --)
+    Solve();
+    return 0;
+}

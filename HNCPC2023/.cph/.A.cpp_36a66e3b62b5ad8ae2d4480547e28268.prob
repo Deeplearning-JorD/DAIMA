@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023HenanCCPC\\A.cpp","tests":[{"id":1683637873746,"input":"3\nhenan\nhhnan\nysmihoyocom","output":"HE\nNaN\nNaN"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\2023HenanCCPC\\A.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: B_ 翻新道路 II","url":"c:\\Users\\jzy\\Desktop\\DAIMA\\B_ 翻新道路 II.cpp","tests":[{"id":1679049055438,"input":"1\n5 4 1\n1 2 3 4 5\n2 1\n2 3\n2 4\n2 5\n1 3 4 5\n1 2\n","output":"10\n15\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jzy\\Desktop\\DAIMA\\B_ 翻新道路 II.cpp","group":"local","local":true}
