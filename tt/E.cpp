@@ -9,66 +9,39 @@ using ll = long long;
 #define SPO(n) fixed << setprecision(n)
 #define rep(i, l, r) for (ll(i) = (l); (i) <= (r); ++(i))
 #define per(i, r, l) for (ll(i) = (r); (i) >= (l); --(i))
-const int N = 210, mod = 1e9 + 7;
-int dp[2][N][N][N]; // dp[i][j][x]表示目前是 i 次店，j 次 花， 现在还X酒的方案数
-
-void Solve(){
-    int n, m; cin >> n >> m;
-    dp[0][0][0][2] = 1;
-    
-    // for(int bit = 0;bit < n + m;bit ++){
-    //     int r = bit&1, l = (bit+1)&1;
-    //     // cout << bit << endl;
-    //     for(int i = 0;i <= n;i ++)
-    //         for(int j = 0;j <= m;j ++)if(i + j == bit){
-    //         for(int x = m + 2;x >= 0;x --){
-    //             if(x * 2 <= m + 2 && i + 1 <= n)
-    //             dp[bit + 1][i + 1][j][x * 2] += dp[bit][i][j][x];
-    //             if(x - 1 >= 0 && j + 1 <= m)
-    //             dp[bit + 1][i][j + 1][x - 1] += dp[bit][i][j][x];
-    //             dp[bit + 1][i][j + 1][x - 1] %= mod;
-    //             dp[bit + 1][i + 1][j][x * 2] %= mod;
-            
-    //         }
-    //     }
-
-        
-    // }
-    for(int bit = 1;bit <= n + m;bit ++){
-        //     for(int j = 0;j <= m;j ++){
-        //         for(int  m;bit ++){
-        int r = bit&1, l = (bit+1)&1;
-        // cout << bit << endl;
-        for(int i = 0;i <= min(bit, n);i ++){
-            int j = bit - i;
-            if(bit - i > m) continue;
-            // cout << ((i + j) == bit) << endl;
-            // cout << bit << ":" << i << ' ' << j << endl;
-            for(int x = m + 2;x >= 0;x --){
-                if(bit == n + m){
-                // if(x % 2 == 0 && i >= 1)
-                // dp[bit][i][j][x] += dp[bit - 1][i - 1][j][x / 2];
-                if(j >= 1)
-                    dp[r][i][j][x] += dp[l][i][j - 1][x + 1];
-                    dp[r][i][j][x] %= mod;
-                }else{
-                    
-                if(x % 2 == 0 && i >= 1)
-                dp[r][i][j][x] += dp[l][i - 1][j][x / 2];
-                if(j >= 1)
-                dp[r][i][j][x] += dp[l][i][j - 1][x + 1];
-                dp[r][i][j][x] %= mod;
-                }
-            }
-        }
-        for(int i = 0;i <= n;i ++){
-            for(int j = 0;j <= m;j ++){
-                for(int x = 0;x <= m + 2;x ++)
-                    dp[l][i][j][x] = 0; 
-            }
-        }
+const int N = 1e6 + 10, M = 5e5 + 5;
+string s;
+// using ll = unsigned long long;
+vector<int> son[N << 1];
+ll k[N];
+ll mp[N];
+ll val;
+void dfs(int now){
+    if(s[now] == '(') val ++;
+    else val --;
+    k[now] += mp[val + M];
+    mp[val + M] ++;
+    for(auto x:son[now]){
+        k[x] += k[now];
+        dfs(x);
     }
-    cout << dp[(n + m) & 1][n][m][0] << endl;
+    mp[val + M] --;
+    if(s[now] == '(') val --;
+    else val ++;
+}
+void Solve(){
+    ll n; cin >> n;
+    cin >> s;
+    s = ' ' + s;
+    rep(i, 2, n){
+        int fa; cin >> fa;
+        son[fa].push_back(i);
+    }
+    mp[0 + M] = 1;
+    dfs(1);
+    ll res = 0;
+    rep(i, 1, n) cout << k[i] << ' '; //res ^= 1ll * i * k[i];
+    cout << res << endl;
     return;
 }
 int main(){
